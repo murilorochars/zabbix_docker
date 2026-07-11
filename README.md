@@ -53,6 +53,12 @@ Demonstrar, de forma didática, o funcionamento do Zabbix como ferramenta de mon
 
 ![Docker Desktop com os containers rodando](imagens/docker.png)
 
+**Comando utilizado para estressar a CPU:**
+
+```bash
+docker exec zabbix-demo-zabbix-agent-1 sh -c "dd if=/dev/zero of=/dev/null & dd if=/dev/zero of=/dev/null & dd if=/dev/zero of=/dev/null"
+```
+
 <!-- Adicionar as próximas imagens aqui, seguindo o mesmo padrão:
 
 **Legenda curta explicando a imagem:**
